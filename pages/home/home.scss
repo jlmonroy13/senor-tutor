@@ -1,0 +1,27 @@
+.home {
+    &__header {
+        display: flex;
+        margin: 40px 100px;
+
+        &-sections {
+            flex-grow: 2;
+            margin-left: 80px;
+        }
+
+        &-login {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &-tag {
+            font-family: $font-family-conamore-medium, $font-family-sans-serif;
+            margin-right: 40px;
+            font-size: 16px;
+
+            &--register {
+                color: $orange-light;
+            }
+        }
+    }
+}
