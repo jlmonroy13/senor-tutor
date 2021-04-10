@@ -1,0 +1,109 @@
+.home {
+    &__header {
+        display: flex;
+        margin: 40px 0;
+
+        &-logo {
+            margin-left: 30px;
+        }
+
+        &-sections {
+            flex-grow: 2;
+            margin-left: 80px;
+        }
+
+        &-login {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &-tag {
+            font-family: $font-family-conamore-medium, $font-family-sans-serif;
+            margin-right: 40px;
+            font-size: 16px;
+            text-transform: uppercase;
+
+            &--register {
+                color: $orange-light;
+            }
+        }
+    }
+
+    &__main {
+        display: flex;
+
+        &-content {
+            padding: 100px 0;
+            width: 50%;
+
+            &-title {
+                font-family: $font-family-albra;
+                text-transform: uppercase;
+                font-size: 45px;
+                color: $white;
+            }
+
+            &-description {
+                display: block;
+                font-family: $font-family-conamore-light;
+                color: $color-text-body;
+                font-size: $font-size-large;
+                padding: 20px 150px 0 0;
+            }
+
+            &-subdescription {
+                display: block;
+                color: $dark-grey;
+                font-style: italic;
+                font-size: $font-size-large;
+            }
+
+            &-link {
+                display: block;
+                margin-top: 40px;
+                color: $orange-light;
+                text-transform: uppercase;
+                font-family: $font-family-conamore-bold;
+            }
+        }
+
+        &-images {
+            width: 50%;
+            position: relative;
+
+            &-frame {
+                width: 400px;
+                height: 480px;
+                position: absolute;
+                right: 30px;
+                top: 15px;
+                border: 1px white solid;
+            }
+
+            &-photo {    
+                object-fit: cover;
+                width: 400px;
+                height: 480px;
+                margin-top: 40px;
+                position: absolute;
+                right: 0;
+            }
+
+            &-tag {
+                background-color: $orange-dark;
+                position: absolute;
+                bottom: -50px;
+                right: -15px;
+                padding: 15px 40px;
+
+                &-text {
+                    font-family: $font-family-conamore-bold;
+                    font-size: 20px;
+                    color: $white;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
